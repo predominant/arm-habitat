@@ -55,6 +55,11 @@ In `/etc/fstab`
 sudo su -
 apt-get update -y
 apt-get install -y git
+# I don't know if both of these are required
+apt-get install -y libsodium23 libsodium-dev
+apt-get install -y libssl-dev
+apt-get install -y libarchive-dev
+
 
 # Rust install (Proceed with default installation)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
