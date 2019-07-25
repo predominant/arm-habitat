@@ -59,6 +59,8 @@ apt-get install -y git tmux libarchive-dev autoconf libtool
 # I don't know if both of these are required
 apt-get install -y libsodium23 libsodium-dev
 
+apt-get install -y libzmq-dev
+
 # libssl-dev is the wrong version on Debian Buster
 #apt-get install -y libssl-dev
 # This didn't help either
