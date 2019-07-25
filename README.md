@@ -73,6 +73,8 @@ export OPENSSL_LIB_DIR=/usr/lib/arm-linux-gnueabihf
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
+cargo install sccache
+
 # Clone Protobuf
 git clone https://github.com/protocolbuffers/protobuf.git
 pushd protobuf
