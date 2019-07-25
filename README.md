@@ -79,13 +79,11 @@ git submodule update --init --recursive
 make && make install
 popd
 
-# Clone habitat
+# Clone Habitat
 git clone https://github.com/habitat-sh/habitat.git
 pushd habitat/components/hab
-
-# Build
 cargo build
-
+popd
 ```
 
 # References
