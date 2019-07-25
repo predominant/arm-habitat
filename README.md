@@ -82,7 +82,7 @@ popd
 # Clone Habitat
 git clone https://github.com/habitat-sh/habitat.git
 pushd habitat/components/hab
-cargo build
+cargo build --release
 popd
 ```
 
