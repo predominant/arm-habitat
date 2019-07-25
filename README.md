@@ -54,13 +54,10 @@ In `/etc/fstab`
 # System tools
 sudo su -
 apt-get update -y
-apt-get install -y git
-apt-get install -y tmux
+apt-get install -y git tmux libarchive-dev autoconf libtool
 
 # I don't know if both of these are required
 apt-get install -y libsodium23 libsodium-dev
-
-apt-get install -y libarchive-dev
 
 # libssl-dev is the wrong version on Debian Buster
 #apt-get install -y libssl-dev
@@ -68,8 +65,6 @@ apt-get install -y libarchive-dev
 #apt-get install -y libssl1.0.2
 apt-get install -y libssl1.0-dev
 export OPENSSL_LIB_DIR=/usr/lib/arm-linux-gnueabihf
-
-apt-get install -y autoconf
 
 # Rust install (Proceed with default installation)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -80,6 +75,8 @@ git clone https://github.com/protocolbuffers/protobuf.git
 pushd protobuf
 git submodule update --init --recursive
 ./autogen.sh
+./configure
+make && make install
 popd
 
 # Clone habitat
