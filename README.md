@@ -74,7 +74,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 ### OPTIONAL (If using sccache wrapper for rust compilation)
-cargo install sccache --features="all"
+#cargo install sccache --features="all"
 
 # Clone Protobuf
 git clone https://github.com/protocolbuffers/protobuf.git
@@ -88,6 +88,7 @@ popd
 # Clone Habitat
 git clone https://github.com/habitat-sh/habitat.git
 pushd habitat/components/hab
+export BUILD_PKG_TARGET=arm-linux
 cargo build --release
 popd
 ```
