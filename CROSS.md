@@ -6,6 +6,7 @@ systemctl start docker
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
+rustup target add arm-unknown-linux-gnueabihf
 cargo install cross
 
 git clone https://github.com/habitat-sh/habitat.git
