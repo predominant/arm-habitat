@@ -99,3 +99,4 @@ popd
 * [RPi SSH Setup](https://howchoo.com/g/ote0ywmzywj/how-to-enable-ssh-on-raspbian-jessie-without-a-screen)
 * [RPi Linux From Scratch](http://intestinate.com/pilfs/beyond.html#addswap)
 * [Cloning SDCard on Mac](https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911)
+* [Shell Share](https://shellshare.net/)
